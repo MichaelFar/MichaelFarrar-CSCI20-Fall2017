@@ -1,3 +1,8 @@
+//This is my code for ASCII art
+//It only prints out a birthday cake
+//-Michael Farrar
+
+
 #include <iostream>
 
 using namespace std;
@@ -17,6 +22,3 @@ int main()
 return 0;
     
 }
-git add lab12;
-git commit -a -m'Lab12 Commit';
-git push;
