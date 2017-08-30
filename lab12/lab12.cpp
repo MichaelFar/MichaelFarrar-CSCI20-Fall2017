@@ -1,6 +1,6 @@
 //This is my code for ASCII art
 //It only prints out a birthday cake
-//-Michael Farrar
+//-Michael Farrar on 8/28/17
 
 
 #include <iostream>
