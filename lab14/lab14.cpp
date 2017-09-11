@@ -13,7 +13,7 @@ int dime = 10;
 int nickel = 5;
 int penny = 1;
 int userInput = 0;
-double Cash = 0.0;
+int Cash = 0;
 int changeQuart = 0;
 int changeDime = 0;
 int changeNickel = 0;
@@ -23,28 +23,32 @@ int totalDime = 0;
 int totalNickel = 0;
 int totalPenny = 0;
 double percentage = 0.0;
+double dollars = 0.0;
+double dollarCalculation = 0.0;
 cout << "Please enter desired amount of cents" << endl;
-// The block below this line calculates how many of each coin you have given user input.
+    // The block below this line calculates how many of each coin you have given user input.
 cin >> userInput; // User input is put here
 totalQuart = userInput / quarter;
 cout << "You have "<< totalQuart <<" quarters"<<endl;
-changeQuart = userInput % quarter;
-totalDime =changeQuart / dime;
+    changeQuart = userInput % quarter;
+    totalDime =changeQuart / dime;
 changeDime = changeQuart % dime;
 cout << "You have " << totalDime << " dimes"<<endl;
-totalNickel = changeDime / nickel;
-cout << "You have "<< totalNickel<< " nickels"<<endl;
+    totalNickel = changeDime / nickel;
+    cout << "You have "<< totalNickel<< " nickels"<<endl;
 changeNickel = changeDime % nickel;
 totalPenny = changeNickel / penny;
 cout << "You have "<<totalPenny<< " pennies" << endl;
-changePenny = changeNickel % penny;
+    changePenny = changeNickel % penny;
 
-Cash = (totalQuart * quarter) + (totalDime * dime) + (totalNickel * nickel) + (totalPenny * penny);
-percentage = Cash * .00109;
+
+Cash = (totalQuart * quarter) + (totalDime * dime) + (totalNickel * nickel) + (totalPenny * penny); //This is for calculating the tax and what you get afterwards
 percentage = Cash / 10;
 Cash = Cash * .108;
 Cash = userInput - Cash;
 cout << "You get " << Cash << " Cents";
+dollars = (userInput * .0108 + Cash) / 100.0;
+cout << " or about " << dollars << " dollars"<<endl;
 
 return 0;    
 
