@@ -12,44 +12,80 @@ int main(){
     double portfolioValue = 0;
 
     stocks Fordm;
-    cout << "How many shares in Fordm do you have?";
+    Fordm.stockName;
+    cout << "What is the name of the first stock?" <<endl;
+    cin >> Fordm.stockName;
+    cout << "How many shares in this stock do you have?"<<endl;
     Fordm.numShares;
     cin >> Fordm.numShares;
-    Fordm.stockName = "Fordm";
-    Fordm.sector = "A";
-    Fordm.sharePrice = 18.76;
+    cout << "What is the sector?"<<endl;
+    Fordm.sector;
+    cin >> Fordm.sector;
+    cout << "What is each share worth?"<<endl;
+    Fordm.sharePrice = 0.00;
+    cin >> Fordm.sharePrice;
     
     stocks Albertsn;
-    cout << "How many shares in Albertsn do you have?";
+    cout << "What is the name of the second stock?"<<endl;
+    cin >> Albertsn.stockName;
+    cout << "How many shares in this stock do you have?"<<endl;
     Albertsn.numShares;
     cin >> Albertsn.numShares;
-    Albertsn.stockName = "Albertsn";
-    Albertsn.sector = "C";
-    Albertsn.sharePrice = 34.39;
+    Albertsn.stockName;
+    Albertsn.sector;
+    cout << "What is the sector?"<<endl;
+    Albertsn.sector;
+    cin >> Albertsn.sector;
+    cout << "What is each share worth?"<<endl;
+    Albertsn.sharePrice = 0.00;
+    cin >> Albertsn.sharePrice;
+    
+    
     
     stocks AAPL;
-    cout << "How many shares in AAPL do you have?";
+    AAPL.stockName;
+    cout << "What is the name of the third stock?"<<endl;
+    cin >> AAPL.stockName;
+    cout << "How many shares in this stock do you have?"<<endl;
     AAPL.numShares;
     cin >> AAPL.numShares;
-    AAPL.stockName = "AAPL";
-    AAPL.sector = "T";
-    AAPL.sharePrice = 145.91;
+    cout << "What is the sector?"<<endl;
+    AAPL.sector;
+    cin >> AAPL.sector;
+    cout << "What is each share worth?"<<endl;
+    AAPL.sharePrice = 0.00;
+    cin >> AAPL.sharePrice;
+    
+    
     
     stocks TSLA;
-    cout << "How many shares in TSLA do you have?";
+    TSLA.stockName;
+    cout << "What is the name of the fourth stock?"<<endl;
+    cin >> TSLA.stockName;
+    cout << "How many shares in this stock do you have?"<<endl;
     TSLA.numShares;
     cin >> TSLA.numShares;
-    TSLA.stockName = "TSLA";
-    TSLA.sector = "A";
-    TSLA.sharePrice = 375.64;
+    cout << "What is the sector?"<<endl;
+    TSLA.sector;
+    cin >> TSLA.sector;
+    cout << "What is each share worth?"<<endl;
+    TSLA.sharePrice = 0.00;
+    cin >> TSLA.sharePrice;
+    
 
     stocks WFC;
-    cout << "How many shares in WFC do you have?";
+    WFC.stockName;
+    cout << "What is the name of the fifth stock?"<<endl;
+    cin >> WFC.stockName;
+    cout << "How many shares in this stock do you have?"<<endl;
     WFC.numShares;
     cin >> WFC.numShares;
-    WFC.stockName = "WFC";
-    WFC.sector = "F";
-    WFC.sharePrice = 53.02;
+    cout << "What is the sector?"<<endl;
+    WFC.sector;
+    cin >> WFC.sector;
+    cout << "What is each share worth?"<<endl;
+    WFC.sharePrice = 0.00;
+    cin >> WFC.sharePrice;
     
     Fordm.totalPrice = Fordm.sharePrice * Fordm.numShares;
     Albertsn.totalPrice = Albertsn.sharePrice * Albertsn.numShares;
@@ -59,7 +95,7 @@ int main(){
     
     cout << "Name of stock" << "      " << "Number of Shares" << "      " << "Current Value" << "      " << "Total Value" << endl;
     cout << Fordm.stockName << "      " << Fordm.numShares << "      " << Fordm.sharePrice << "      " << Fordm.totalPrice << endl;
-    cout << Albertsn.stockName << "      " << Albertsn.numShares << "      " << Albertsn.sharePrice << "      " << Albertsn.totalPrice << endl;
+    cout << Albertsn.stockName << "   " << Albertsn.numShares << "      " << Albertsn.sharePrice << "      " << Albertsn.totalPrice << endl;
     cout << AAPL.stockName << "      " << AAPL.numShares << "      " << AAPL.sharePrice << "      " << AAPL.totalPrice << endl;
     cout << TSLA.stockName << "      " << TSLA.numShares << "      " << TSLA.sharePrice << "      " << TSLA.totalPrice << endl;
     cout << WFC.stockName << "      " << WFC.numShares << "      " << WFC.sharePrice << "      " << WFC.totalPrice << endl;
