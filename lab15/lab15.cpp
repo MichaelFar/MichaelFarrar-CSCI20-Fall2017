@@ -1,9 +1,14 @@
+//Michael Farrar
+//9/11/2017
+//csci 020
+//My madlibs code
 #include <iostream>
 #include <string>
 using namespace std;
 
 
 int main() {
+//All of my wonderful string variables, here they are initialized
 string adj1;
 string nationality;
 string name;
@@ -21,6 +26,7 @@ string food1;
 string food2;
 string number2;
 
+//These next blocks give a string value to the initialized variables
 cout << "Let's play MadLibs!" <<endl;
 cout << "Choose an adjective" << endl;
 cin >> adj1;
@@ -70,7 +76,7 @@ cin >> food2;
 cout <<"Choose a number" << endl;
 cin >> number2;
 
-
+//Here the variable values are printed in the correct sequence
 cout <<"Pizza was invented by a "<< adj1 << " " << nationality << endl << " chef named " << name <<"."<<endl<<" To make a pizza, you need to take a lump of "<<noun1<<" and make a thin, round" << endl << adj2 <<" " << noun2 << ". Then you cover it with "<<endl;
 cout << adj3 << " " << noun3 << " sauce, " << adj4 << " Cheese," << " and fresh chopped " << pluralNoun << ". Next you have to bake it in a very hot " << noun4 <<endl<< ". When it is done, cut it into " << number1<< " "<< shapes << ". Some kids like " << food1 << " pizza."<<endl;
 cout << " If I could, I would eat a pizza " << number2 << " times a day!";
