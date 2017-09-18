@@ -44,6 +44,7 @@ do {//This is code for verifying if the coupon has the correct percentage.
 
 if (order_one.coupon >= 1 && order_one.coupon < 10 or order_one.coupon > 50)
     {
+    
     invalid = 1;
     cout << "That coupon is invalid. Please input a valid value" << endl;
     cin >> order_one.coupon;
@@ -56,6 +57,7 @@ else
     
 }
 while (invalid == 1);
+
 cout << "Would you like to tip? If so how much?" << endl;
 cin >> order_one.tip;
 
@@ -71,6 +73,7 @@ if (order_one.coupon > 0.00)//I was confused as to why if the user used no coupo
 {
     order_one.finalPrice = order_one.dummyfinalPrice;
 };
+
 order_one.finalPrice = (order_one.finalPrice * order_one.salesTax) + order_one.tip;
 cout << "Your total is $"; 
 cout << fixed << setprecision(2) << order_one.finalPrice << ". Thank You and come again!"; //My fancy rounding code, I had to look up how to actually round this way
