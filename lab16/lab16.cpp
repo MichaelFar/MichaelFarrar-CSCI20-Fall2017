@@ -1,7 +1,11 @@
+// Michael Farrar
+// 9/13/17
+// CSCI 020
+
 #include <iostream>
 #include <string>
 using namespace std;
-struct stocks{
+struct stocks{ // This is the struct for the stocks
         string stockName;
         string sector;
         double totalPrice;
@@ -9,9 +13,9 @@ struct stocks{
         double sharePrice;
     };
 int main(){
-    double portfolioValue = 0;
+    double portfolioValue = 0; // This variable is the final value of the entire portfolio
 
-    stocks Fordm;
+    stocks Fordm; // Declared this object, please ignore the name as it does not effect the final calculation in the slightest
     Fordm.stockName;
     cout << "What is the name of the first stock?" <<endl;
     cin >> Fordm.stockName;
@@ -87,7 +91,7 @@ int main(){
     WFC.sharePrice = 0.00;
     cin >> WFC.sharePrice;
     
-    Fordm.totalPrice = Fordm.sharePrice * Fordm.numShares;
+    Fordm.totalPrice = Fordm.sharePrice * Fordm.numShares; // The following equations calculate the value of each individual company stock
     Albertsn.totalPrice = Albertsn.sharePrice * Albertsn.numShares;
     AAPL.totalPrice = AAPL.sharePrice * AAPL.numShares;
     TSLA.totalPrice = TSLA.sharePrice * TSLA.numShares;
@@ -99,6 +103,7 @@ int main(){
     cout << AAPL.stockName << "      " << AAPL.numShares << "      " << AAPL.sharePrice << "      " << AAPL.totalPrice << endl;
     cout << TSLA.stockName << "      " << TSLA.numShares << "      " << TSLA.sharePrice << "      " << TSLA.totalPrice << endl;
     cout << WFC.stockName << "      " << WFC.numShares << "      " << WFC.sharePrice << "      " << WFC.totalPrice << endl;
-    portfolioValue = Fordm.totalPrice + Albertsn.totalPrice + AAPL.totalPrice + TSLA.totalPrice + WFC.totalPrice;
+    
+    portfolioValue = Fordm.totalPrice + Albertsn.totalPrice + AAPL.totalPrice + TSLA.totalPrice + WFC.totalPrice; // This equation calculates the final value of all the stocks together
     cout << "Total value of your portfolio " << portfolioValue <<" Dollars" <<endl;
 }
