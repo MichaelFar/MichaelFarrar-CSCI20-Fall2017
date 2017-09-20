@@ -56,7 +56,7 @@ else
     }
     
 }
-while (invalid == 1);
+while (invalid = 1);
 
 cout << "Would you like to tip? If so how much?" << endl;
 cin >> order_one.tip;
@@ -82,7 +82,7 @@ cout << fixed << setprecision(2) << order_one.finalPrice << ". Thank You and com
 return 0;
 
 }
-//A. Welcome! Let's get started what size do you want in oz. ?
+    //A. Welcome! Let's get started what size do you want in oz. ?
 /*
 4
 How many toppings do you want? If none type 0
@@ -95,7 +95,7 @@ Your total is $1.33. Thank You and come again!
 
 Process exited with code: 0
  
-//B. 16, 7, 0%, $0
+    //B. 16, 7, 0%, $0
 
 Welcome! Let's get started what size do you want in oz. ?
 16
@@ -107,7 +107,7 @@ Would you like to tip? If so how much?
 0
 Your total is $6.67. Thank You and come again!
 
-//C. 32, 4, 25%, .05
+    //C. 32, 4, 25%, .05
 
 Welcome! Let's get started what size do you want in oz. ?
 32
@@ -119,7 +119,7 @@ Would you like to tip? If so how much?
 .05
 Your total is $6.03. Thank You and come again!
 
-//D. 14, 10, 50%, $1
+    //D. 14, 10, 50%, $1
 
 Welcome! Let's get started what size do you want in oz. ?
 14
