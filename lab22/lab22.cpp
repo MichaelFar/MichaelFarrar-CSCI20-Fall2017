@@ -13,8 +13,9 @@ int generated() { // This function seeds the algorithm and generates the random 
     srand (time(NULL));
 
     int genNum = (rand() % 100) + 1;
-
+   
     cout << genNum;
+
 }
 
 int main()
