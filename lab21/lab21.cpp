@@ -50,5 +50,16 @@ What is the temperature?
 The windspeed of old style wind chill is 27.8601
 The windspeed of new style wind chill is 25.2388
 The difference between them is by 2.62135
+
+c.
+
+What velocity is the wind?
+2
+What is the temperature?
+100
+The windspeed of old style wind chill is 98.7538
+The windspeed of new style wind chill is 100.697
+The difference between them is by 1.94317
+
 */
 }
