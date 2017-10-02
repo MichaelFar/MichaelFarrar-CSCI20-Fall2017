@@ -36,7 +36,7 @@ void ComputeSphere(int l/*parameter*/)
 }
 
 void ComputeBox(int l, int w, int h/*parameter*/)
-{// Computes volume of the rectangle
+{// Computes volume of the rectanglular prism
     double v = l * w * h;
     cout<<"The volume of a rectangular box is "<<v<<endl;
 }
