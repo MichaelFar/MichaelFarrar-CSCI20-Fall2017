@@ -1,3 +1,5 @@
+//Michael Farrar 
+//Lab 3.4 Debugging
 //Sum of numbers 
 //Write a program that reads in positive integers from the user, each separated by a space, and the whole terminated by a negative number (e.g. 3 22 10 -2),and outputs the sum of the numbers entered (notincluding the terminated negative number!).***************************************************/
 #include <iostream>
@@ -28,3 +30,8 @@ int main(){
                 cout << "Sum was " << sum << endl;
                 return 0;
 }
+/*
+
+
+
+*/
