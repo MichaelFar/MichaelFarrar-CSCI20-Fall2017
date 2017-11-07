@@ -15,8 +15,8 @@ class ArrayTools {
     int myArray[size];
     public:
     int Print() {
-        
-        
+        for (i = 0; i < size; ++i )
+        {
             cout << myArray[i] << endl;
         
     }
@@ -101,7 +101,7 @@ int main()
     for(int i = 0; i<SIZE;i++){
         cin>>myArray[i];
     }
-    ArrayTools a;
+    ArrayTools a(myArray, size);
     
     a.Print();
     cout<<"Min: "<<a.Find_min(0, 4)<<endl;
