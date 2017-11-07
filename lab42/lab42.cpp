@@ -1,3 +1,10 @@
+/*
+Michael Farrar
+csci 20
+
+
+
+*/
 #include <iostream>
 #include <cstring>
 
@@ -12,14 +19,15 @@ int main() {
     int shoppingAmount = 1000;
     int menuSelect = 0;
     string shoppingCart[shoppingAmount];
-    int amount[SIZE] {4, 5, 7, 8, 2, 3, 5, 7, 8, 9};
-    string inventory[SIZE] {"Shirts(s)", " Pairs of Shoes", " Watches", " Coats", " Hats", " Ties", " Bags", " Glasses", " Socks", " Gloves"};
-    double price[SIZE] {15.50, 40.20, 20.99, 60.40, 20.32, 12.50, 30.60, 80.99, 10.10, 13.70};
-while(menuSelect != 11)
+    int amount[SIZE] {4, 5, 7, 8, 2, 3, 5, 7, 8, 9};// The amount of each item in stock
+    string inventory[SIZE] {"Shirts(s)", " Pairs of Shoes", " Watches", " Coats", " Hats", " Ties", " Bags", " Glasses", " Socks", " Gloves"};// The items for sale
+    double price[SIZE] {15.50, 40.20, 20.99, 60.40, 20.32, 12.50, 30.60, 80.99, 10.10, 13.70};// Their prices
+while (menuSelect < 11)
 {
-    if (shoppingAmount == 0)
+    if (shoppingAmount == 1000)
     {
         cout << "Hello! Welcome to generic clothing store. Please type 0 - 10 to put an item in your cart, input 11 to end your session and print" << endl;
+        shoppingAmount = shoppingAmount = 1;
     }
     cin >> menuSelect;
     
